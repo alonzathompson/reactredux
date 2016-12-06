@@ -1,1 +1,23 @@
-timezones.js
+export default {
+	"(GMT-11:00) Niue": "Pacific/Nue",
+	"(GMT-11:00) Pago Pago": "Pacific/Pago_Pago",
+	"(GMT-10:00) Hawaii Time": "Pacific/Honolulu",
+	"(GMT-10:00) Tahiti": "Pacific/Tahiti",
+	"(GMT-9:30) Marquesas": "Pacific/Marquesas",
+	"(GMT-9:00) Alaska Time": "America/Anchorage",
+	"(GMT-9:00) Gambier": "Pacific/Gambier",
+	"(GMT-8:00) Pacific Time": "Ameirca/Los_Angeles",
+	"(GMT-8:00) Pacific Time - Tijuana": "Ameirca/Tijuana",
+	"(GMT-8:00) Pacific Time - Vancouver": "Ameirca/Vancouver",
+	"(GMT-8:00) Pacific Time - Whitehorse": "Ameirca/Whitehorse",
+	"(GMT-8:00) Pitcairn": "Pacific/Pitcairn",
+	"(GMT-7:00) Mountain Time - Dawson Creek": "America/Dawson_Creek",
+	"(GMT-7:00) Mountain Time": "America/Denver",
+	"(GMT-7:00) Mountain Time - Edmonton": "America/Edmonton",
+	"(GMT-7:00) Mountain Time - Hermosillo": "America/Hermosillo",
+	"(GMT-7:00) Mountain Time - Chihuahua, Mazatla": "America/Mazatlan",
+	"(GMT-7:00) Mountain Time - Arizona": "America/Phoenix",
+	"(GMT-7:00) Mountain Time - yellowknife": "America/yellowknife",
+	"(GMT-6:00) Belize": "America/Belize",
+	"(GMT-6:00) Central Time": "America/Chicago"
+}

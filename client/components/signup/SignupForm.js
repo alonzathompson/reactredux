@@ -1,4 +1,6 @@
 import React from 'react';
+import timezones from '../../data/timezones';
+import map from 'lodash/map';
 
 class SignupForm extends React.Component{
 	constructor(props){
@@ -25,6 +27,9 @@ class SignupForm extends React.Component{
   }
 
 	render(){
+		const options = map(timezones, (val, key) =>
+			<option key={val} value={val}>{key}</option>
+		);
 		return(
 			<form onSubmit={this._handleSubmit}>
 				<h1>Join our commmunity!</h1>
@@ -73,12 +78,25 @@ class SignupForm extends React.Component{
 					/>
 				</div>
 
+				<div className="form-group">
+					<label className="control-label">Timezone</label>
+					<select					
+						name="timezone"
+						className="form-control"
+						onChange={this._handleChange}
+						value={this.state.timezone}	
+					>
+						<option value='' disabled>Choose your timezone</option>
+						{options}
+					</select>
+				</div>
+
 					<div className="form-group">
 						<button className="btn btn-primary btn-lg">
 							Sign up
 						</button>
 					</div>
-					
+
 			</form>
 		);
 	}
