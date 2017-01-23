@@ -28,6 +28,10 @@ export default {
 					path.join(__dirname, 'server/shared')
 				],
 				loaders: [ 'react-hot', 'babel']
+			},
+			{
+				test: /\.scss$/,
+				loaders: ['style', 'css', 'sass']
 			}
 		]
 	},

@@ -1,0 +1,334 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16pt;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 250%;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
+/*.myHeaderBackground {
+  position: relative;
+  width: 100%;
+  z-index: -1;
+  height: 500px;
+  padding-top: 100px;
+  overflow-x: hidden;
+  background: linear-gradient(rgba(253, 227, 167, 0.55), rgba(253, 227, 167, 0.55)), url("https://static.pexels.com/photos/131667/pexels-photo-131667.jpeg");
+  /*background-color: #FDE3A7;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}*/
+
+.hideB {
+  transition: all 2s ease-out;
+}
+
+.showA {
+  height: 60px;
+  box-shadow: 2px 2px 5px #665B58;
+  margin-bottom: 0;
+}
+
+.navbar {
+  transition: all .5s ease-in-out;
+}
+
+.navbar-brand {
+  color: #333 !important;
+}
+
+.brandStyle {
+  font-family: 'Molle', cursive;
+  font-size: 150%;
+  color: #333;
+  position: fixed;
+  left: 16px;
+  margin-top: 8px;
+  margin-left: 16px;
+  list-style: none;
+}
+
+.fixedLogo {
+  font-family: 'Quicksand';
+  position: fixed;
+  font-size: 300%;
+  top: 200px;
+  width: 100%;
+  height: 300px;
+  z-index: 2;
+  padding: 2%;
+  transition: position 1s ease-in-out;
+}
+
+.otherLogos {
+  font-family: 'Quicksand';
+  position: relative;
+  top: 200px;
+  font-size: 300%;
+  width: 100%;
+  height: 300px;
+  z-index: 2;
+  padding: 2%;
+  transform: translatey(-120px);
+  transition: top 1s, transform 0.5s ease;
+}
+
+.headerPic2 {
+  /*background-image: url('http://pngimg.com/upload/jewelry_PNG6729.png');*/
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 100%;
+  top: -20px;
+  left: 50%;
+  margin-left: -600px;
+  height: 100%;
+  z-index: 1;
+}
+
+.menuButton {
+  position: fixed;
+  z-index: 10;
+  right: 40px;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 5px 2.5px 2.5px 2.5px;
+  margin-top: 10px;
+}
+.menuButton .icons {
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  text-shadow: 1px 3px 3px #969696;
+  border-radius: 5px;
+  margin: 5px auto 0 auto;
+}
+.menuButton .icons .icons-last-child {
+  margin-bottom: 5px;
+}
+
+.menuButton:hover {
+  background-color: rgba(240, 245, 250, 0.5);
+  box-shadow: 2px 6px 12px 0px rgba(50, 50, 50, 0.75);
+  transition: box-shadow 500ms ease-in-out;
+}
+.menuButton:hover::after {
+  box-shadow: 1px 2px 7px 0px rgba(50, 50, 50, 0.75);
+  transition: box-shadow 500ms ease-out;
+}
+
+.myDrop {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  color: #fff;
+  z-index: 7;
+  background-color: rgba(1, 1, 1, 0.9);
+  overflow: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  font-size: 1.2em;
+}
+
+.myDrop a {
+  padding: 8px 8px 8px 50px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.headerBackground {
+  position: relative;
+  overflow: hidden;
+}
+
+.myBackground {
+  background-color: transparent;
+}
+
+.paragraph {
+  text-indent: 5%;
+  text-align: justify;
+  font-size: 100%;
+  line-height: 150%;
+  margin: 3% 0;
+  padding: 2%;
+}
+
+.midSec {
+  padding: 5%;
+}
+.midSec h2 {
+  font-weight: 600;
+  margin: 2.5% 0 2.5% 0;
+}
+.midSec p {
+  color: #777;
+  margin: 5% 0 5% 0;
+}
+
+.mySplit {
+  width: 50%;
+  display: inline-block;
+  float: left;
+  padding: 5%;
+  margin-bottom: 10%;
+  border-top: solid 1px #ffffff;
+}
+
+.sec1 {
+  background-color: #C8F7C5;
+  color: #22313F;
+}
+
+.sec2 {
+  background-color: #EC644B;
+  color: #22313F;
+}
+
+.sec3 {
+  background-color: #336E7B;
+  color: #22313F;
+}
+
+.sec4 {
+  background-color: #C5EFF7;
+  color: #22313F;
+}
+
+.myPad {
+  padding: 0;
+}
+
+.banner1 {
+  height: 200px;
+  width: 100%;
+  background-color: #336E7B;
+  color: #f1f1f1;
+  padding-top: 25px;
+  border-bottom: solid 4px #b1b1b1;
+}
+.banner1 .bannerPic {
+  border-radius: 50%;
+  background-color: #81E2E6;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  color: #EC644B;
+  box-shadow: inset 0px 2px 10px 3px rgba(100, 100, 100, 0.75);
+}
+.banner1 .bannerPic .bannerPicInside {
+  margin: 25% auto;
+}
+
+.Para2 {
+  width: 100%;
+  height: 500px;
+  background-color: #f3f3f3;
+  z-index: -1;
+  position: relative;
+  bottom: 0;
+}
+
+.banner2 {
+  padding: 5px 0 5px 0;
+  margin-bottom: 10px;
+}
+
+.myPic {
+  width: 150px;
+  height: 150px;
+  margin: auto auto;
+  padding: 5px;
+  border-radius: 50%;
+  background-image: url("https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAgeAAAAJDliMTk2Yjg3LWFjMDUtNDA0OS1hZDhkLWNjYmU2YmI1MWVjNA.jpg");
+  background-size: cover;
+  box-shadow: inset 0px 2px 10px 3px rgba(100, 100, 100, 0.75);
+}
+
+.drawing {
+  width: 100%;
+  height: 600px;
+  background-image: url("https://s29.postimg.org/h8n5obh3r/girlinhoodiefinala.png");
+  background-size: 425px 600px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 10% 0px;
+  margin: auto;
+}
+
+.toolsList {
+  width: 100%;
+  height: 100px;
+  background-color: #C5EFF7;
+  margin: 5% 0;
+  padding: 2.5%;
+}
+.toolsList span {
+  color: #777;
+}
+
+.projectListCss {
+  margin: 1% auto;
+  color: #333;
+  padding: 3%;
+}
+.projectListCss p {
+  color: #777;
+}
+.projectListCss h3 {
+  color: #333;
+}
+.projectListCss :hover {
+  background-color: #c5eff7;
+}
+
+.contact {
+  background-color: #474747;
+  color: #f5f5f5;
+  padding: 2.5%;
+}
+
+.foot {
+  display: block;
+  background: #444;
+  height: 100px;
+  width: 100%;
+  border-top: 1px solid #e1e1e1;
+}
+
+.footer-container {
+  max-width: 300px;
+  padding: 10px;
+  margin: 10px auto 0 auto;
+  text-align: center;
+}
+
+.footer-content {
+  margin-right: 20px;
+}
+

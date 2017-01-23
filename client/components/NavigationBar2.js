@@ -23,7 +23,7 @@ class NavigationBar extends React.Component {
     const navClass = collapsed ? "collapse" : "";
 
     return (
-      <nav className="navbar" role="navigation">
+      <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div className="container">
           <div className="navbar-header">
             <button type="button" className="navbar-toggle" onClick={this.toggleCollapse.bind(this)} >
@@ -35,11 +35,11 @@ class NavigationBar extends React.Component {
           </div>
           <div className={"navbar-collapse " + navClass} id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav">
-              <li className="active">
+              <li activeClassName="active" onlyActiveOnIndex={true}>
                 <Link to="/" onClick={this.toggleCollapse.bind(this)}>Featured</Link>
               </li>
               
-              <li className="active">
+              <li activeClassName="active">
                 <Link to="/signup" onClick={this.toggleCollapse.bind(this)}>Sign-Up</Link>
 			  </li>
             </ul>
@@ -52,4 +52,5 @@ class NavigationBar extends React.Component {
 
 export default NavigationBar;
 
+//<Link to="/" className="navbar-brand">What it do</Link>
 //<li><Link to="/signup">Sign up</Link></li>

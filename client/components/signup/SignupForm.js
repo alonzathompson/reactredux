@@ -20,6 +20,7 @@ class SignupForm extends React.Component{
 
     this._handleChange = this._handleChange.bind(this);
     this._handleSubmit = this._handleSubmit.bind(this);
+    this._checkUserExists = this._checkUserExists.bind(this);
   }
 
   _handleChange(event) {
@@ -34,6 +35,16 @@ class SignupForm extends React.Component{
   	}
 
   	return isValid;
+  }
+
+  _checkUserExists(e){
+  	const field = e.target.name;
+  	const val = e.target.value;
+  	if (val !== ''){
+  		this.props.isUserExists(val).then(res => {
+
+  		});
+  	}
   }
 
   _handleSubmit(e) {
@@ -68,6 +79,7 @@ class SignupForm extends React.Component{
 					error={errors.username}
 					label="username"
 					onChange={this._handleChange}
+					checkUserExists={this._checkUserExists}
 					value={this.state.username}
 					field="username"						
 				/>
@@ -77,6 +89,7 @@ class SignupForm extends React.Component{
 					error={errors.email}
 					label="Email"
 					onChange={this._handleChange}
+					checkUserExists={this._checkUserExists}
 					value={this.state.email}
 					field="email"						
 				/>
@@ -127,7 +140,8 @@ class SignupForm extends React.Component{
 
 SignupForm.propTypes = {
 	userSignupRequest: React.PropTypes.func.isRequired,
-	addFlashMessage: React.PropTypes.func.isRequired
+	addFlashMessage: React.PropTypes.func.isRequired,
+	isUserExists: React.PropTypes.func.isRequired
 }
 
 SignupForm.contextTypes = {

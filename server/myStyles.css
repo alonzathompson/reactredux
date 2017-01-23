@@ -1,0 +1,15 @@
+body{
+	width: 100%;
+	height: 500px;
+	background-color: #222;
+}
+
+.wrapper{
+	background-color: #111;
+}
+
+.jumbotron{
+	background-color: #888 !important; 
+	width: 100%;
+	position: relative;
+}
